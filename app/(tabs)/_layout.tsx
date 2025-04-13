@@ -6,13 +6,17 @@ export default function TabLayout() {
 
     //adding the clickable tabs? and adding the names
     <Tabs screenOptions={{
+      //icon color for home
       tabBarActiveTintColor: '#ffd33d',
       headerStyle: {
-        backgroundColor: '25292e'
+        //background of the header title "home"
+        backgroundColor: '#25292e'
       },
       headerShadowVisible: false,
-      headerTintColor: '#fff',
+      // on the home page, it changes the title "home color"
+      headerTintColor: '#fff', 
       tabBarStyle: {
+      //background of the button icons
       backgroundColor: '#25292e'
       }
     }}>
@@ -20,7 +24,9 @@ export default function TabLayout() {
       <Tabs.Screen 
         name="index" 
         options={{ 
+          //name under the icon
           title: 'Home',
+          //Icon shape, color, and size
           tabBarIcon: ({ color, focused }) => (
             <Ionicons name={focused ? 'home-sharp' : 'home-outline'} color={color} size={24} />
           ),
@@ -28,7 +34,7 @@ export default function TabLayout() {
       />
 
       <Tabs.Screen 
-      //changing style of the about button 
+      //changing style of the about button ^
         name="about" 
         options={{ 
           title: 'About', 
