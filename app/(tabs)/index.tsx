@@ -7,9 +7,10 @@ export default function Index() {
   return (
     //View with the Style object features
     //Text with the Style object features
+    //layer for the buttons on the navigation?
     <View style={styles.container}> 
       <Text style={styles.text}>Home screen.</Text>
-      <Link href={"/about"} style={styles.button}>
+      <Link href={"/about"} style={styles.button}> 
         Go to About screen
       </Link>
     </View>
